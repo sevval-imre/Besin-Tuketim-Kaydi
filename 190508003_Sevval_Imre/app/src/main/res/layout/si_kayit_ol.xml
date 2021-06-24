@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SI_Kayit">
+
+    <EditText
+        android:id="@+id/si_kayitol_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Mail Adresiniz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_kayitol_sifre"
+        app:layout_constraintEnd_toEndOf="@+id/si_kayitol_sifre"
+        app:layout_constraintStart_toStartOf="@+id/si_kayitol_sifre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/si_kayitol_sifre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Şifreniz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_kayitol_adsoyad"
+        app:layout_constraintEnd_toEndOf="@+id/si_kayitol_adsoyad"
+        app:layout_constraintStart_toStartOf="@+id/si_kayitol_adsoyad"
+        app:layout_constraintTop_toBottomOf="@+id/si_kayitol_email" />
+
+    <EditText
+        android:id="@+id/si_kayitol_adsoyad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Adınız-Soyadınız."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_kayitol_boy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_kayitol_sifre" />
+
+    <EditText
+        android:id="@+id/si_kayitol_yas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="yas"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_btn_kayitol_kayit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_kayitol_kilo" />
+
+    <Button
+        android:id="@+id/si_btn_kayitol_kayit"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:onClick="si_kayitol"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_kayitol_yas" />
+
+    <EditText
+        android:id="@+id/si_kayitol_boy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Boyunuz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_kayitol_kilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_kayitol_adsoyad" />
+
+    <EditText
+        android:id="@+id/si_kayitol_kilo"
+        android:layout_width="324dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Kilonuz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_kayitol_yas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_kayitol_boy" />
+</androidx.constraintlayout.widget.ConstraintLayout>

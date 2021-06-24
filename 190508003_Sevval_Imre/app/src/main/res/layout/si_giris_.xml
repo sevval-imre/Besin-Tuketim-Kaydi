@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SI_GirisSayfasi">
+
+    <EditText
+        android:id="@+id/si_giris_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="Mail Adresinizi Giriniz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_giris_sifre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/si_giris_sifre"
+        android:layout_width="338dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="Şifrenizi Giriniz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_btn_giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_giris_email" />
+
+    <Button
+        android:id="@+id/si_btn_giris"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="si_giris_yap"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toTopOf="@+id/si_btn_giris_kayitol"
+        app:layout_constraintEnd_toEndOf="@+id/si_btn_giris_kayitol"
+        app:layout_constraintStart_toStartOf="@+id/si_btn_giris_kayitol"
+        app:layout_constraintTop_toBottomOf="@+id/si_giris_sifre" />
+
+    <Button
+        android:id="@+id/si_btn_giris_kayitol"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="91dp"
+        android:onClick="si_kayit_ol"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_btn_giris" />
+</androidx.constraintlayout.widget.ConstraintLayout>

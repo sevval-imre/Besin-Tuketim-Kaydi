@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Besin Tüketim Kaydı Şevval İmre</string>
+
+    <string name="si_ogunOlustur">Öğün seçiniz</string>
+
+    <string name="si_ogunKaydet">Yeni Besin Kayıt Sayfası</string>
+
+    <string-array name="si_ogunEkle">
+        <item>Sabah</item>
+        <item>Kuşluk</item>
+        <item>Öğle</item>
+        <item>İkindi</item>
+        <item>Akşam</item>
+        <item>Gece</item>
+    </string-array>
+</resources>

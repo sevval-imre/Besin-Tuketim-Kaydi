@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "377617446737",
+    "project_id": "imre-7d521",
+    "storage_bucket": "imre-7d521.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377617446737:android:a704305238ee2e2bef4570",
+        "android_client_info": {
+          "package_name": "com.example.a190508003_sevval_imre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377617446737-28t4lbsk9rdihbn3gis647to8efd60c9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3iDqBB2v_sFyoJ-OTYm8LKOSZcTW2c6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377617446737-28t4lbsk9rdihbn3gis647to8efd60c9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SI_YeniBesinEkle">
+
+    <Button
+        android:id="@+id/si_anasayfa_yeni"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="21dp"
+        android:text="Anasayfaya Dön"
+        app:layout_constraintBottom_toBottomOf="@+id/si_btn_kayitet_yeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/si_btn_kayitet_yeni"
+        app:layout_constraintTop_toTopOf="@+id/si_btn_kayitet_yeni" />
+
+    <EditText
+        android:id="@+id/si_besinAdi_yeni"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="177dp"
+        android:ems="10"
+        android:hint="Besin veya yemek adı giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/si_kahve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/si_porsiyon_yeni"
+        android:layout_width="347dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Besin veya yemek porsiyonu giriniz."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/si_ogun_yeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_besinResmi_yeni" />
+
+    <Button
+        android:id="@+id/si_btn_kayitet_yeni"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="48dp"
+        android:text="Kayıt Et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/si_anasayfa_yeni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_cinsiyet_yeni" />
+
+    <ImageView
+        android:id="@+id/si_besinResmi_yeni"
+        android:layout_width="260dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintBottom_toTopOf="@+id/si_porsiyon_yeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/camera" />
+
+    <Spinner
+        android:id="@+id/si_ogun_yeni"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/si_ogunEkle"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_porsiyon_yeni" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="217dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="2dp"
+        android:text="Besin veya yemek adı ekleyiniz."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/si_besinResmi_yeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Gün içinde aşağıdaki içeceklerden hangilerini tükettiniz?"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/si_gazliicecek"
+        app:layout_constraintEnd_toEndOf="@+id/si_kahve"
+        app:layout_constraintStart_toEndOf="@+id/si_kahve"
+        app:layout_constraintTop_toBottomOf="@+id/si_ogun_yeni" />
+
+    <CheckBox
+        android:id="@+id/si_su"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="22dp"
+        android:text="Su"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/si_kahve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/si_kahve"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Kahve"
+        app:layout_constraintEnd_toStartOf="@+id/si_cay"
+        app:layout_constraintStart_toEndOf="@+id/si_su"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <CheckBox
+        android:id="@+id/si_cay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="Çay"
+        app:layout_constraintBottom_toTopOf="@+id/si_cinsiyet_yeni"
+        app:layout_constraintEnd_toStartOf="@+id/si_gazliicecek"
+        app:layout_constraintStart_toEndOf="@+id/si_kahve"
+        app:layout_constraintTop_toBottomOf="@+id/si_gazliicecek" />
+
+    <CheckBox
+        android:id="@+id/si_gazliicecek"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:text="Gazlı İçecek"
+        app:layout_constraintBottom_toTopOf="@+id/si_cay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/si_cay"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="174dp"
+        android:text="Cinsiyetiniz:"
+        android:textColor="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_su" />
+
+    <RadioGroup
+        android:id="@+id/si_cinsiyet_yeni"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/si_btn_kayitet_yeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si_cay">
+
+        <RadioButton
+            android:id="@+id/si_kadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kadın" />
+
+        <RadioButton
+            android:id="@+id/si_erkek"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Erkek" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
